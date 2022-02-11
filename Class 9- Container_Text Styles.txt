@@ -1,0 +1,57 @@
+Page to Page Class call
+
+type Class name and press TAB	
+import 'package:demo3/home.dart';
+
+decoration: BoxDecoration(),
+
+padding = spacing(for text)
+margin = spacing(for container)
+
+color:Color(0xff),
+
+
+style: TextStyle(color: Colors.red, fontSize: 30),
+
+
+**************************************************************
+//decoration
+children: [
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            padding: EdgeInsets.all(20),
+            child: Center(child: Text("Box")),
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+                        color: Colors.red,
+                        borderRadius: BorderRadius.circular(20)),
+       ),  ],
+
+
+*************************************************************
+//align
+return Scaffold(
+      body: Align(
+        alignment: Alignment.center,
+        child: Container(
+          child: Center(child: Text("Box")),
+          height: 100,
+          width: 100,
+          decoration: BoxDecoration(
+              color: Colors.red, borderRadius: BorderRadius.circular(20)),
+        ),
+      ),
+    );
+
+
+************************************************************
+//text style
+return Scaffold(
+      body: Center(
+        child: Text(
+          "Hello World",
+          style: TextStyle(color: Colors.red, fontSize: 30),
+        ),
+      ),
+    );

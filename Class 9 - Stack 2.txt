@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            child: Container(
+              child: Center(child: Text("Red")),
+              height: 100,
+              width: 100,
+              color: Colors.red,
+            ),   ),
+          Positioned(
+            right: 0,
+            child: Container(
+              child: Center(child: Text("Blue")),
+              height: 100,
+              width: 100,
+              color: Colors.blue,
+            ),   ),
+          Positioned(
+            left: 0,
+            bottom: 0,
+            child: Container(
+              child: Center(child: Text("Green")),
+              height: 100,
+              width: 100,
+              color: Colors.green,
+            ),   ),
+          Positioned(
+            right: 0,
+            bottom: 0,
+            child: Container(
+              child: Center(child: Text("Yellow")),
+              height: 100,
+              width: 100,
+              color: Colors.yellow,
+            ),   ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Align(
+                alignment: Alignment.center,
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.black,
+   ),  ),
+              Align(
+                alignment: Alignment.center,
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  color: Colors.green, ), )  ], ), ],),);}}

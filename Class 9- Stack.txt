@@ -1,0 +1,30 @@
+Stack is overlay (Picture over picture)
+
+Stack takes Children (like Row/Column)
+
+
+****************************************************
+//Stack with alignment
+return Scaffold(
+      body: Stack(children: [
+         Align(alignment: Alignment.center,child: Container(color: Colors.red,height: 100,width: 100,)),
+         Align(alignment: Alignment.centerLeft,child: Container(color: Colors.green,height: 100,width: 100,)),
+         Align(alignment: Alignment.centerRight,child: Container(color: Colors.blue,height: 100,width: 100,))
+      ],),
+    );
+
+
+****************************************************
+/// Stack with Postioned
+body: Stack(
+        children: [
+          Positioned(
+            top: 100,
+            left: 200,
+            child: Container(
+              child: Center(child: Text("Stop")),
+              height: 100,
+              width: 100,
+              color: Colors.red,
+               ),
+          ),       ],      ),

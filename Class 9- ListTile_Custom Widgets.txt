@@ -1,0 +1,25 @@
+Widget abc() {
+  return ListTile(
+    leading: CircleAvatar(
+      backgroundColor: Colors.red,
+      radius: 20,
+    ),
+    title: Text("Message"),
+    subtitle: Text("0123456"),
+    trailing: Column(
+      children: [Text("12:00")],
+    ),
+  );
+}
+
+
+******************************************************
+//Custom Widget
+return Scaffold(
+        body: Column(
+      children: [
+        abc(),
+        abc(),
+        abc(),
+      ],
+    ));

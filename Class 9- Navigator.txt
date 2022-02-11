@@ -1,0 +1,9 @@
+Navigator: Button opens other page.
+ElevatedButton(
+          onPressed: () {
+          Navigator.push(
+          context, MaterialPageRoute(builder: (context) => App()));
+          },
+          child: Text("data")),
+
+Navigator.pop(context); = Takes back to main page

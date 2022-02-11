@@ -1,0 +1,29 @@
+
+NetworkImage = Image from Internet
+
+AssetImage = Image from computer
+>create "assets" folder in project
+>pubspecy (select assets and ctrl+?)
+>edit it to "assets/"
+
+
+*******************************************
+//Network Image
+return Scaffold(
+        body: Center(
+      child: CircleAvatar(
+        radius: 100,
+        backgroundImage: NetworkImage(''),
+      ),
+    ));
+
+
+*******************************************
+//Asset Image
+return Scaffold(
+        body: Center(
+      child: CircleAvatar(
+        radius: 100,
+        backgroundImage: AssetImage('assets/asus.jpg'),
+      ),
+    ));
